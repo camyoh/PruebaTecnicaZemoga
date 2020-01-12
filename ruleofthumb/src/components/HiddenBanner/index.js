@@ -1,7 +1,5 @@
 import React from 'react'
 import './styles.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTimes } from '@fortawesome/free-solid-svg-icons'
 import xIcon from '../../assets/xIcon.png'
 
 const hiddenBanner = () => {

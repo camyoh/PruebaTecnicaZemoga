@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './styles.css';
 import { databaseRef } from '../../firebase';
-import { Card, SubmitBanner, Footer, HiddenBanner } from '../../components';
+import { Card, SubmitBanner, Footer, HiddenBanner, Banner } from '../../components';
 
 import firebase from 'firebase/app';
 import 'firebase/database';
@@ -52,6 +52,7 @@ const useTimes = () => {
 
   return (
     <>
+      <Banner />
       <div className="charactersContainer">
         <HiddenBanner />
         <div className="bodyTittle">Votes</div>
