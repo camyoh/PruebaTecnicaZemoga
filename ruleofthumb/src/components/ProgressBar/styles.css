@@ -1,0 +1,38 @@
+.bar, .percentTextBar{
+  width: 400px;
+  height: 40px;
+  display: flex;
+  position: relative;
+}
+.progress, .dislikeProgress {
+  height: 40px;
+  width: 0%;
+  background-color:rgba(29, 187, 180, 1);
+}
+.dislikeProgress {
+  background-color: rgba(253, 173, 29, 1);
+}
+.dislikePercent {
+  align-self: center;
+}
+.percentTextBar {
+  position: absolute;
+  justify-content: space-between;
+}
+.percentValueLeft, .percentValueRigth{
+  color: white;
+  font-size: 25px;
+  width: 100px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+.percentValueRigth{
+  justify-content: flex-end;
+  align-items: center;
+}
+.likeButton, .dislikeButton{
+  width: 20px;
+  height: 20px;
+  padding: 0px 10px;
+}

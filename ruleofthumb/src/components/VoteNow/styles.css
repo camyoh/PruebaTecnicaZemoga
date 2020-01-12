@@ -1,0 +1,49 @@
+.like {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: rgb(29, 187, 180);
+  outline: solid;
+  outline-width: 2px;
+  user-select: none;
+}
+.dislike {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: rgb(253, 173, 29);
+  outline: solid;
+  outline-width: 2px;
+  user-select: none;
+}
+.container {
+  width: 220px;
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+.voteNow {
+  width: 120px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid;
+  border-color: tomato;
+  border-width: 2px;
+  background-color: transparent;
+  cursor: pointer;
+  user-select: none;
+}
+.voteText {
+  margin: 0;
+}
+.icon{
+  width: 20px;
+  height: 20px;
+}

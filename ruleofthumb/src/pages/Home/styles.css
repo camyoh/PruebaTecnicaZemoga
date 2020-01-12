@@ -1,3 +1,13 @@
 h1 {
   font-size: 70px;
 }
+
+.bar {
+  width: 400px;
+  height: 40px;
+}
+.progress {
+  height: 40px;
+  width: 0%;
+  background-color: aqua;
+}
