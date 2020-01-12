@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import './styles.css';
 import { databaseRef } from '../../firebase';
-import { Header, Card, ProgressBar, VoteNow } from '../../components';
+import { Card, SubmitBanner, Footer, HiddenBanner } from '../../components';
 
 import firebase from 'firebase/app';
 import 'firebase/database';
 import card from '../../components/Card';
+import hiddenBanner from '../../components/HiddenBanner';
 
 const useTimes = () => {
   const [characterList, setCharacterList] = useState([]);
@@ -33,23 +34,6 @@ const useTimes = () => {
     });
   }
 
-  const percent = (up, down) => {
-    return up + down;
-  }
-
-  const moveBar = (until, index) => {
-    const progress = document.querySelector('.progress');
-    let atPercentage = characterList[index].thumbsUp;
-    const interval = setInterval(() => {
-      progress.style.width = atPercentage + "%";
-      atPercentage++;
-      if (atPercentage > until) {
-        clearInterval(interval);
-      }
-    }, 10);
-
-  }
-
   const likesPercentage = (likes, dislikes) => {
     if (likes === 0 && dislikes === 0) {
       return 0;
@@ -68,47 +52,26 @@ const useTimes = () => {
 
   return (
     <>
-      {/* <Header /> */}
-      {
-        characterList.map((character, index) => (
-          <div key={character.name}>
-            <Card
-              character={character}
-              onHanddleClick={voteThumpsUp}
-              index={index}
-              voteLikeFunction={voteThumpsUp}
-              voteDislikeFunction={voteThumpsDown}
-            />
-            {/* <VoteNow /> */}
-            {/* <ProgressBar
-              percentValueLikes={likesPercentage(character.thumbsUp, character.thumbsDown)}
-              percentValuedisLikes={dislikesPercentage(character.thumbsUp, character.thumbsDown)}
-              likes={Math.round(likesPercentage(character.thumbsUp, character.thumbsDown))}
-              dislikes={Math.round(dislikesPercentage(character.thumbsUp, character.thumbsDown))}
-            /> */}
-            {/* <button onClick={() => enviar(index)}>Enviar</button>
-            <p>
-              Name: {character.name}
-            </p>
-            <p>
-              Role: {character.role}
-            </p>
-            <p>
-              Likes: {character.thumbsUp}
-            </p>
-            <p>
-              Dislikes: {character.thumbsDown}
-            </p>
-            <p>
-              Percent: {percent(character.thumbsUp, character.thumbsDown)}
-            </p>
-            <img
-              src={character.urlImage}
-              alt={character.name}
-            /> */}
-          </div>
-        ))
-      }
+      <div className="charactersContainer">
+        <HiddenBanner />
+        <div className="bodyTittle">Votes</div>
+        {
+          characterList.map((character, index) => (
+            <div key={character.name}>
+              <Card
+                character={character}
+                index={index}
+                voteLikeFunction={voteThumpsUp}
+                voteDislikeFunction={voteThumpsDown}
+              />
+            </div>
+          ))
+        }
+        <SubmitBanner />
+        <div className="dotLine" />
+        <Footer />
+      </div>
+
     </>
   );
 }

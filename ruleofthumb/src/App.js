@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import { Home, HowItWorks } from './pages';
 
+
 const Routes = () => {
   return (
     <Router>

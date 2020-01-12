@@ -1,5 +1,5 @@
 .bar, .percentTextBar{
-  width: 400px;
+  width: 492px;
   height: 40px;
   display: flex;
   position: relative;
@@ -7,10 +7,10 @@
 .progress, .dislikeProgress {
   height: 40px;
   width: 0%;
-  background-color:rgba(29, 187, 180, 1);
+  background-color:rgba(29, 187, 180, 0.7);
 }
 .dislikeProgress {
-  background-color: rgba(253, 173, 29, 1);
+  background-color: rgba(253, 173, 29, 0.7);
 }
 .dislikePercent {
   align-self: center;

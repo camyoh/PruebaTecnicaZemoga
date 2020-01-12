@@ -52,7 +52,7 @@ const VoteNow = ({ voteLikeFunction, voteDislikeFunction, index }) => {
         setCanVote('alreadyVote');
         setBorderDislike({ outlineColor: transparent })
         break;
-        case 'alreadyVote':
+      case 'alreadyVote':
         setShowThumbsButton(true)
         break;
 
@@ -63,6 +63,9 @@ const VoteNow = ({ voteLikeFunction, voteDislikeFunction, index }) => {
 
   return (
     <>
+      <p className="cardBody">
+        {showThumbsButton ? 'Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.' : 'Thank you for voting!'}
+      </p>
       <div className="container">
         {showThumbsButton ?
           <>
@@ -77,7 +80,7 @@ const VoteNow = ({ voteLikeFunction, voteDislikeFunction, index }) => {
 
         <div className="voteNow" onClick={voteNowClicked}>
           <p className="voteText">
-            {showThumbsButton? 'Vote now' : 'Vote again'}
+            {showThumbsButton ? 'Vote now' : 'Vote again'}
           </p>
         </div>
       </div>

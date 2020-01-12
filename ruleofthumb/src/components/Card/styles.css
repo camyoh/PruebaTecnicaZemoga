@@ -1,3 +1,34 @@
 .card {
-  
+  margin: 20px;
+  width: 492px;
+  height: 550px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.cardTittle{
+  font-size: 46px;
+  color: white;
+  margin: 0;
+}
+.cardSubtitle{
+  color: white;
+  font-size: 14px;
+}
+.cardBody{
+  height: 50px;
+  color: rgb(228, 228, 228);
+  font-size: 20px;
+}
+.description{
+  margin-left: 10px;
+  width: 80%;
+}
+.cahracterData{
+  display: flex;
+}
+.content{
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  height: 100%;
 }
