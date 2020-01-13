@@ -1,5 +1,5 @@
 .bar, .percentTextBar{
-  width: 650px;
+  width: 750px;
   height: 40px;
   display: flex;
   position: relative;
@@ -35,6 +35,12 @@
   width: 20px;
   height: 20px;
   padding: 0px 10px;
+}
+
+@media screen and (max-width: 1680px){
+  .bar, .percentTextBar{
+    width: 650px;
+  }
 }
 
 @media screen and (max-width: 720px){

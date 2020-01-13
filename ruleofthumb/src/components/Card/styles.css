@@ -1,7 +1,7 @@
 .card {
   margin: 20px 0;
-  width: 650px;
-  height: 700px;
+  width: 750px;
+  height: 800px;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -31,6 +31,13 @@
   justify-content: flex-end;
   flex-direction: column;
   height: 100%;
+}
+
+@media screen and (max-width: 1680px){
+  .card {
+    width: 650px;
+    height: 700px;
+  }
 }
 
 @media screen and (max-width: 720px){
