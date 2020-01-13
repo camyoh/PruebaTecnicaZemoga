@@ -1,0 +1,28 @@
+.bannerBar{
+  display: flex;
+  width: 100%;
+  height: 60px;
+}
+.leftBar, .rightBar{
+  height: 100%;
+}
+.leftBar{
+  padding-right: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: white;
+  width: 30%;
+  background-color: rgba(163, 163, 163, 0.8);
+}
+.rightBar{
+  color: rgb(85, 85, 85);
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  width: 70%;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.rightBar b{
+  margin: 0 10px;
+}

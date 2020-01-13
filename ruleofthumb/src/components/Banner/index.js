@@ -1,6 +1,6 @@
 import React from 'react'
 import './styles.css'
-import { Header, FloatingDescription } from '../../components'
+import { Header, FloatingDescription, BannerBar } from '../../components'
 
 const banner = ({title, body}) => {
   return (
@@ -9,6 +9,7 @@ const banner = ({title, body}) => {
       <div className="floatingDescription">
         <FloatingDescription title={title} body={body}/>
       </div>
+      <BannerBar />
     </div>
   );
 }

@@ -1,4 +1,7 @@
 .bigBanner{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin: auto;
   background-size: cover;
   width: 1920px;
