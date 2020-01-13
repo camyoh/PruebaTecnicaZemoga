@@ -38,22 +38,6 @@ const useTimes = () => {
     });
   }
 
-  const likesPercentage = (likes, dislikes) => {
-    if (likes === 0 && dislikes === 0) {
-      return 0;
-    } else {
-      return likes / (likes + dislikes) * 100;
-    }
-  }
-
-  const dislikesPercentage = (likes, dislikes) => {
-    if (likes === 0 && dislikes === 0) {
-      return 0;
-    } else {
-      return 100 - likesPercentage(likes, dislikes);
-    }
-  }
-
   return (
     <>
       <Banner title={principalCharacter.name} body={principalCharacter.introduction} />
@@ -63,13 +47,13 @@ const useTimes = () => {
         <div className="characterContainer">
           {
             characterList.map((character, index) => (
-                <Card
-                  key={character.name}
-                  character={character}
-                  index={index}
-                  voteLikeFunction={voteThumpsUp}
-                  voteDislikeFunction={voteThumpsDown}
-                />
+              <Card
+                key={character.name}
+                character={character}
+                index={index}
+                voteLikeFunction={voteThumpsUp}
+                voteDislikeFunction={voteThumpsDown}
+              />
             ))
           }
         </div>

@@ -1,5 +1,7 @@
 .header a{
   text-decoration: none;
+  color: rgb(218, 218, 218);
+  font-size: 18px;
 }
 .header{
   width: 100%;
@@ -15,8 +17,8 @@
   align-items: center;
 }
 .headerTitle{
-  color: white;
-  font-size: 40px;
+  color: white !important;
+  font-size: 40px !important;
 }
 .headerLinks{
   color: rgb(218, 218, 218);
@@ -37,9 +39,9 @@
     justify-content: start;
   }
   .headerTitle{
-    font-size: 60px;
+    font-size: 60px !important;
   }
-  .headerLinks{
+  .header a{
     font-size: 40px;
   }
   .linksContainer{

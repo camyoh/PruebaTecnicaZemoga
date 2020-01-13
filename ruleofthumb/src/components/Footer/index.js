@@ -10,9 +10,9 @@ const footer = () => {
     <>
       <div className="footer">
         <div>
-          <a href="#">Terms and Conditions</a>
-          <a href="#">Privacy Policy</a>
-          <a href="#">Contact Us</a>
+          <a href="/#">Terms and Conditions</a>
+          <a href="/#">Privacy Policy</a>
+          <a href="/#">Contact Us</a>
         </div>
         <div className="socialIcons">
           Follow Us

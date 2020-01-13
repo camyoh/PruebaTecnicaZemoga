@@ -1,2 +1,6 @@
 export { default as Home} from './Home'
 export { default as HowItWorks} from './HowItWorks'
+export { default as PastTrials} from './PastTrials'
+export { default as LogIn} from './LogIn'
+export { default as Search} from './Search'
+export { default as MoreInformation} from './MoreInformation'

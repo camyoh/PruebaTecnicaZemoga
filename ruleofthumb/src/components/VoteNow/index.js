@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import './styles.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import thumbsUpLogo from '../../assets/thumbsUp.png'
 import thumbsDownLogo from '../../assets/thumbsDown.png'
 
@@ -13,7 +12,7 @@ const VoteNow = ({ voteLikeFunction, voteDislikeFunction, index }) => {
   const [showThumbsButton, setShowThumbsButton] = useState(true);
 
   const likeClicked = () => {
-    if (borderLike.outlineColor == 'white') {
+    if (borderLike.outlineColor === 'white') {
       setBorderLike({ outlineColor: transparent })
       setCanVote(null);
     } else {
@@ -28,7 +27,7 @@ const VoteNow = ({ voteLikeFunction, voteDislikeFunction, index }) => {
   }, [])
 
   const dislikeClicked = () => {
-    if (borderDislike.outlineColor == 'white') {
+    if (borderDislike.outlineColor === 'white') {
       setBorderDislike({ outlineColor: transparent })
       setCanVote(null)
     } else {
