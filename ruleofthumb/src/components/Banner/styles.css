@@ -5,6 +5,11 @@
   height: 945px;
   background-image: url('../../assets/background.png');
 }
+.floatingDescription{
+  margin: auto;
+  margin-top: 100px;
+  width: 80%;
+}
 /* 0.5625 */
 
 @media screen and (max-width: 1680px){
@@ -27,3 +32,4 @@
     height: 405px;
   }
 }
+

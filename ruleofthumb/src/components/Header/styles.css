@@ -1,0 +1,29 @@
+.header a{
+  text-decoration: none;
+}
+.header{
+  width: 100%;
+  height: 100px;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0) );
+}
+.headerContent{
+  margin: auto;
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.headerTitle{
+  color: white;
+  font-size: 40px;
+}
+.headerLinks{
+  color: rgb(218, 218, 218);
+  font-size: 18px;
+}
+.linksContainer{
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+}

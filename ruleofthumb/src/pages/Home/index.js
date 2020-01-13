@@ -5,17 +5,21 @@ import { Card, SubmitBanner, Footer, HiddenBanner, Banner } from '../../componen
 
 import firebase from 'firebase/app';
 import 'firebase/database';
-import card from '../../components/Card';
-import hiddenBanner from '../../components/HiddenBanner';
 
 const useTimes = () => {
   const [characterList, setCharacterList] = useState([]);
+  const [principalCharacter, setPrincipalCharacter] = useState([]);
 
   useEffect(() => {
     databaseRef.on('value', snapshot => {
       const data = snapshot.val();
       const characterList = data.characterList.map((character) => (character));
       setCharacterList(characterList);
+    });
+    databaseRef.on('value', snapshot => {
+      const data = snapshot.val();
+      const principalCharacter = data.mainCharacter;
+      setPrincipalCharacter(principalCharacter);
     });
   }, [])
 
@@ -52,7 +56,7 @@ const useTimes = () => {
 
   return (
     <>
-      <Banner />
+      <Banner title={principalCharacter.name} body={principalCharacter.introduction}/>
       <div className="charactersContainer">
         <HiddenBanner />
         <div className="bodyTittle">Votes</div>
