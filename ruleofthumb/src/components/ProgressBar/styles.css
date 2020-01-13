@@ -1,0 +1,63 @@
+.bar, .percentTextBar{
+  width: 750px;
+  height: 40px;
+  display: flex;
+  position: relative;
+}
+.progress, .dislikeProgress {
+  height: 40px;
+  width: 0%;
+  background-color:rgba(29, 187, 180, 0.7);
+}
+.dislikeProgress {
+  background-color: rgba(253, 173, 29, 0.7);
+}
+.dislikePercent {
+  align-self: center;
+}
+.percentTextBar {
+  position: absolute;
+  justify-content: space-between;
+}
+.percentValueLeft, .percentValueRigth{
+  color: white;
+  font-size: 25px;
+  width: 100px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+.percentValueRigth{
+  justify-content: flex-end;
+  align-items: center;
+}
+.likeButton, .dislikeButton{
+  width: 20px;
+  height: 20px;
+  padding: 0px 10px;
+}
+
+@media screen and (max-width: 1680px){
+  .bar, .percentTextBar{
+    width: 650px;
+  }
+}
+
+@media screen and (max-width: 720px){
+  .bar, .percentTextBar{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+  }
+  .percentValueLeft, .percentValueRigth{
+    font-size: 50px;
+  }
+  .progress, .dislikeProgress {
+    height: 80px;
+  }
+  .likeButton, .dislikeButton{
+    width: 40px;
+    height: 40px;
+  }
+}

@@ -1,0 +1,32 @@
+.popular, .unpopular {
+  margin-top: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background-color: rgb(29, 187, 180);
+  user-select: none;
+}
+.unpopular {
+  background-color: rgb(253, 173, 29);
+}
+.emptyIcon{
+  width: 30px;
+  height: 30px;
+}
+.icon{
+  width: 20px;
+  height: 20px;
+}
+
+@media screen and (max-width: 720px){
+  .popular, .unpopular {
+    width: 60px;
+    height: 60px;
+  }
+  .icon{
+    width: 40px;
+    height: 40px;
+  }
+}

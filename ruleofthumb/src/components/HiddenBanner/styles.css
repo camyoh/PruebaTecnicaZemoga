@@ -1,0 +1,43 @@
+
+.hiddenBanner{
+  background-color: rgb(235, 235, 235);
+  display: flex;
+  align-items: center;
+  width: 80%;
+  height: 80px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.hiddenBanner p {
+  margin: 0;
+}
+.bannerTitles{
+  padding-left: 20px;
+  color: rgb(85, 85, 85);
+  width: 20%;
+}
+.bannerBody{
+  font-size: 14px;
+  color: rgb(85, 85, 85);
+  width: 70%;
+}
+.bannerCloseIcon{
+  color: rgb(85, 85, 85);
+  padding-right: 20px;
+  display: flex;
+  justify-content: flex-end;
+  width: 10%;
+}
+.xIcon{
+  cursor: pointer;
+}
+.bannerTitle{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 720px){
+  .bannerBody{
+    font-size: 20px;
+  }
+}

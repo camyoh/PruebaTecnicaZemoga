@@ -1,0 +1,109 @@
+.floatingContainer{
+  color: rgb(221, 221, 221);
+  padding: 30px;
+  box-sizing: border-box;
+  backdrop-filter: blur(30px);
+  background-color: rgba(70, 70, 70, 0.4);
+  width: 720px;
+  height: 590px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.floatingContainer p{
+  margin: 0;
+}
+.thumbsIcons{
+  display: flex;
+  width: 720px;
+  height: 100px;
+}
+.thumbsUp, .thumbsDown{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+.thumbsUp{
+  background-color: rgba(29, 187, 180, 0.8);
+}
+.thumbsDown{
+  background-color: rgba(253, 173, 29, 0.8);
+}
+.icons{
+  width: 40px;
+  height: 40px;
+}
+.wikiLogo{
+  display: flex;
+  align-items: center;
+}
+.wikiText{
+  cursor: pointer;
+  margin-left: 4px;
+  border-bottom: solid;
+  border-width: 1px;
+}
+.wikiText a{
+  text-decoration: none;
+  color: rgb(221, 221, 221);;
+}
+.opinionText{
+  font-size: 24px;
+}
+.nameText{
+  margin-bottom: 30px !important;
+  color: white;
+  font-size: 70px;
+}
+.introductionText{
+  margin-bottom: 30px !important;
+  width: 80%;
+  font-size: 25px;
+}
+.questionText{
+  margin-top: 60px !important;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1680px){
+  .floatingContainer{
+    width: 630px;
+    height: 500px;
+  }
+  .thumbsIcons{
+    width: 630px;
+  }
+}
+
+@media screen and (max-width: 720px){
+  .floatingContainer{
+    width: 576px;
+    height: 452px;
+  }
+  .thumbsIcons{
+    width: 576px;
+    height: 50px;
+  }
+  .opinionText{
+    font-size: 30px;
+  }
+  .nameText{
+    margin-bottom: 0px !important;
+  }
+  .introductionText{
+    margin-bottom: 0px !important;
+    width: 100%;
+    font-size: 33px;
+  }
+  .questionText{
+    margin-top: 0px !important;
+  }
+  .icons{
+    width: 30px;
+    height: 30px;
+  }
+}

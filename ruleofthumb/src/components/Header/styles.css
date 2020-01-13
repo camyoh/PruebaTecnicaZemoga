@@ -1,0 +1,50 @@
+.header a{
+  text-decoration: none;
+  color: rgb(218, 218, 218);
+  font-size: 18px;
+}
+.header{
+  width: 100%;
+  height: 100px;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0) );
+}
+.headerContent{
+  margin: auto;
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.headerTitle{
+  color: white !important;
+  font-size: 40px !important;
+}
+.headerLinks{
+  color: rgb(218, 218, 218);
+  font-size: 18px;
+}
+.linksContainer{
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 720px){
+  .header{
+    height: 150px;
+  }
+  .headerContent{
+    flex-direction: column;
+    justify-content: start;
+  }
+  .headerTitle{
+    font-size: 60px !important;
+  }
+  .header a{
+    font-size: 40px;
+  }
+  .linksContainer{
+    width: 100%;
+  }
+}

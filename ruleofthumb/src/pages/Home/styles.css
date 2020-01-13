@@ -1,0 +1,55 @@
+h1 {
+  font-size: 70px;
+}
+
+.bar {
+  width: 400px;
+  height: 40px;
+}
+.progress {
+  height: 40px;
+  width: 0%;
+  background-color: aqua;
+}
+.bodyContainer{
+  width: 1920px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: center;
+}
+.dotLine{
+  margin-bottom: 20px;
+  width: 80%;
+  border-top: dotted rgb(85, 85, 85) 2px;
+  border-width: 1px;
+}
+.bodyTittle{
+  width: 80%;
+  font-size: 40px;
+  color: rgb(85, 85, 85);
+}
+.characterContainer{
+  width: 80%;
+  display: flex;
+  flex-wrap: inherit;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 1680px){
+  .bodyContainer{
+    width: 1680px;
+  }
+}
+
+@media screen and (max-width: 1280px){
+  .bodyContainer{
+    width: 1280px;
+  }
+}
+
+@media screen and (max-width: 720px){
+  .characterContainer{
+    width: 100%;
+  }
+}
