@@ -1,7 +1,7 @@
 .card {
-  margin: 20px;
-  width: 492px;
-  height: 550px;
+  margin: 20px 0;
+  width: 650px;
+  height: 700px;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -31,4 +31,31 @@
   justify-content: flex-end;
   flex-direction: column;
   height: 100%;
+}
+
+@media screen and (max-width: 720px){
+  .card{
+    margin: 40px auto;
+    width: 80%;
+    height: 1000px;
+  }
+  .cardTittle{
+    font-size: 80px;
+  }
+  .cardSubtitle{
+    font-size: 40px;
+  }
+  .cardBody{
+    font-size: 40px;
+    height: 100px;
+  }
+  .description p {
+    margin: 0;
+  }
+  .description{
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }

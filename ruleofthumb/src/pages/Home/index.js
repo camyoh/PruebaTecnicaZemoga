@@ -56,22 +56,23 @@ const useTimes = () => {
 
   return (
     <>
-      <Banner title={principalCharacter.name} body={principalCharacter.introduction}/>
-      <div className="charactersContainer">
+      <Banner title={principalCharacter.name} body={principalCharacter.introduction} />
+      <div className="bodyContainer">
         <HiddenBanner />
         <div className="bodyTittle">Votes</div>
-        {
-          characterList.map((character, index) => (
-            <div key={character.name}>
-              <Card
-                character={character}
-                index={index}
-                voteLikeFunction={voteThumpsUp}
-                voteDislikeFunction={voteThumpsDown}
-              />
-            </div>
-          ))
-        }
+        <div className="characterContainer">
+          {
+            characterList.map((character, index) => (
+                <Card
+                  key={character.name}
+                  character={character}
+                  index={index}
+                  voteLikeFunction={voteThumpsUp}
+                  voteDislikeFunction={voteThumpsDown}
+                />
+            ))
+          }
+        </div>
         <SubmitBanner />
         <div className="dotLine" />
         <Footer />

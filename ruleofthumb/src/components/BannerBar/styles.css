@@ -26,3 +26,9 @@
 .rightBar b{
   margin: 0 10px;
 }
+
+@media screen and (max-width: 720px){
+  .leftBar{
+    font-size: 35px;
+  }
+}

@@ -27,3 +27,22 @@
   display: flex;
   justify-content: space-between;
 }
+
+@media screen and (max-width: 720px){
+  .header{
+    height: 150px;
+  }
+  .headerContent{
+    flex-direction: column;
+    justify-content: start;
+  }
+  .headerTitle{
+    font-size: 60px;
+  }
+  .headerLinks{
+    font-size: 40px;
+  }
+  .linksContainer{
+    width: 100%;
+  }
+}

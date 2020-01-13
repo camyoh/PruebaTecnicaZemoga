@@ -29,10 +29,11 @@
   }
 }
 
-@media screen and (max-width: 720){
-  .bigBanner{
-    width: 720px;
-    height: 405px;
+@media screen and (max-width: 720px){
+  .floatingDescription{
+    margin-top: 0;
   }
 }
+
+
 

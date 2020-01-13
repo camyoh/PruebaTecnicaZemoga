@@ -4,8 +4,8 @@
   box-sizing: border-box;
   backdrop-filter: blur(30px);
   background-color: rgba(70, 70, 70, 0.4);
-  width: 630px;
-  height: 500px;
+  width: 720px;
+  height: 590px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -15,7 +15,7 @@
 }
 .thumbsIcons{
   display: flex;
-  width: 630px;
+  width: 720px;
   height: 100px;
 }
 .thumbsUp, .thumbsDown{
@@ -63,4 +63,43 @@
   color: white;
   font-size: 25px;
   font-weight: bold;
+}
+
+@media screen and (max-width: 1680px){
+  .floatingContainer{
+    width: 630px;
+    height: 500px;
+  }
+  .thumbsIcons{
+    width: 630px;
+  }
+}
+
+@media screen and (max-width: 720px){
+  .floatingContainer{
+    width: 576px;
+    height: 452px;
+  }
+  .thumbsIcons{
+    width: 576px;
+    height: 50px;
+  }
+  .opinionText{
+    font-size: 30px;
+  }
+  .nameText{
+    margin-bottom: 0px !important;
+  }
+  .introductionText{
+    margin-bottom: 0px !important;
+    width: 100%;
+    font-size: 33px;
+  }
+  .questionText{
+    margin-top: 0px !important;
+  }
+  .icons{
+    width: 30px;
+    height: 30px;
+  }
 }

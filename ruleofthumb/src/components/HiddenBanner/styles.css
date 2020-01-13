@@ -3,7 +3,7 @@
   background-color: rgb(235, 235, 235);
   display: flex;
   align-items: center;
-  width: 96%;
+  width: 80%;
   height: 80px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -34,4 +34,10 @@
 .bannerTitle{
   font-size: 30px;
   font-weight: bold;
+}
+
+@media screen and (max-width: 720px){
+  .bannerBody{
+    font-size: 20px;
+  }
 }
